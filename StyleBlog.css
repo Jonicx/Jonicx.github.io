@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto Condensed');
+*, *::before, *::after{
+   box-sizing: border-box;}
+body{
+   padding: 0;
+   padding: auto;
+   margin: 0 auto;
+   margin: 0;
+   background-color:white;
+   font-family: Roboto Condensed,sans-serif;
+   font-size: 1.2rem;
+   min-height: 100vh;
+}
+
+.container .backgroundimage{
+   position: relative;
+   flex-grow: 1;
+   flex-direction: row;
+   display: flex;
+   align-self: stretch;
+   justify-self: flex-end;}
+
+.container .backgroundimage .img{
+   position: relative;
+   flex-grow: 1;
+   width: 50%;
+   margin: 0 auto;}
+
+.container .main-header{
+   position: absolute;
+   width: 100%;
+   align-self: stretch;
+   margin-top: 1rem;
+   padding: 0 40px;
+   padding: auto;
+   flex-grow: 1;
+   flex-direction: row;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.brand-logo{
+   display: flex;
+   align-items: center;
+   font-size: 1.25em;
+   text-decoration: none;
+}
+
+.brand-logo-name{
+   margin-left: 0.1rem;
+   font-size: 1.5rem;
+   font-weight: 600;
+   color: white;}
+
+.main-nav ul{
+   display: flex;
+   margin:0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;}
+
+.main-nav a{
+   color:#EE7E17;
+   text-decoration: none;
+   padding: 3rem;}
+
+.main-nav a:hover{
+   color: #8b4300;
+}
+
+.main-nav .blog{
+   color: white;
+}
+.main-nav .blog:hover{
+   color: #b4b4b4;
+}
+.blog-pharase{
+   position: absolute;
+   width: 100%;
+   align-self: center;
+   margin-top: 16.5rem;
+   padding: 0 40px;
+   padding: auto;
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   font-size: 5.8em;
+   color: white;
+}
+
+.home-white-part{
+   background-color:#ffffff;
+   flex-grow: 1;
+   min-height: 140vh;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: space-between;
+}
+
+.home-white-part .white-title{
+   display: flex;
+   align-items: center;
+   padding: 0 110px;
+   margin-top: 1rem;
+}
+
+.home-white-part .white-title .call-white-title{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin: 1rem;
+}
+
+.home-white-part .white-title .call-white-title .black-title{
+   font-size: 1.3em;
+   font-weight: 500;
+}
+
+.home-white-part .image-wrapper{
+   flex-grow: 1;
+   flex-direction: row;
+   display: flex; 
+}
+.home-white-part .image-wrapper .one{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   align-items: stretch;
+   justify-content: space-between;
+}
+.home-white-part .image-wrapper-set-2 .two{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   align-items: stretch;
+   justify-content: space-between;
+}
+.home-white-part .image-wrapper .one .image1{
+   background-image: url(images-Blog/blueOnline.png);
+   flex-grow: 1;
+   max-height: 50vh;
+   max-width: 70vw;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin-bottom: 0rem;
+}
+.home-white-part .image-wrapper .one .blueWords{
+   font-size: 1em;
+   font-weight: 500;
+   padding: 0 130px;
+   margin-top: 0rem;
+   text-align: center;
+}
+.home-white-part .image-wrapper .one .glassesWords{
+   font-size: 1em;
+   font-weight: 500;
+   padding: 0 130px;
+   margin-top: 0rem;
+   text-align: center;
+}
+.home-white-part .image-wrapper .one .blakPeople{
+   font-size: 1em;
+   font-weight: 500;
+   padding: 0 130px;
+   margin-top: 0rem;
+   text-align: center;
+}
+
+.home-white-part .image-wrapper .one .image2{
+   background-image: url(images-Blog/glasses.png);
+   flex-grow: 1;
+   max-height: 50vh;
+   max-width: 70vw;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.home-white-part .image-wrapper .one .image3{
+   background-image: url(images-Blog/blackMan.png);
+   flex-grow: 1;
+   max-height: 50vh;
+   max-width: 70vw;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.home-white-part .image-wrapper-set-2{
+   flex-grow: 1;
+   flex-direction: row;
+   display: flex; 
+   align-items: stretch;
+   justify-content: flex-end;
+}
+.home-white-part .image-wrapper-set-2 .two .Ladies{
+   font-size: 1em;
+   font-weight: 500;
+   padding: 0 130px;
+   margin-top: 0rem;
+   text-align: center;
+}
+.home-white-part .image-wrapper-set-2 .two .blakpeople2{
+   font-size: 1em;
+   font-weight: 500;
+   padding: 0 130px;
+   margin-top: 0rem;
+   text-align: center;
+}
+
+.home-white-part .image-wrapper-set-2 .two .image1-set2{
+   background-image: url(images-Blog/women.png);
+   flex-grow: 1;
+   max-height: 50vh;
+   max-width: 70vw;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.home-white-part .image-wrapper-set-2 .image2-set2{
+   background-image: url(images-Blog/blackMan.png);
+   flex-grow: 1;
+   max-height: 50vh;
+   max-width: 70vw;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.home-white-part .image-wrapper-set-2 .image3-set3{
+   background-image: url(images-Blog/women.png);
+   flex-grow: 1;
+   max-height: 50vh;
+   max-width: 70vw;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.home-black-part{
+   background-color:#000000;
+   flex-grow: 1;
+   min-height: 50vh;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: space-between;}
+
+.home-black-part .black-title2{
+   display: flex;
+   align-self: center;
+   align-items: center;}
+
+.home-black-part .black-title2 .call-black-title2{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   align-self: center;}
+
+.home-black-part .black-title2 .call-black-title2 .black-title{
+   font-size: 1.4em;
+   font-weight: 500;
+   color: white;
+   margin-bottom: 0;
+   margin-top: 5rem;}
+
+.home-black-part .Button-wrapper{
+   flex-grow: 1;
+   display: flex; 
+   align-items: stretch;
+   align-self: center;
+   margin-top: 5rem;}
+
+.btn1{
+   color: white;
+   background-color: #EE7E17;
+   padding:  1rem;
+   text-decoration: none;
+   margin-right: 2rem;
+   margin-left: 2rem;
+   font-size: .9rem;}
+
+.btn2{
+   color: white;
+   background-color: #EE7E17;
+   padding: 1rem;
+   text-decoration: none;
+   margin-right: 2rem;
+   margin-left: 2rem;
+   font-size: .9rem;}
+
+.btn3{
+   color: white;
+   background-color: #EE7E17;
+   padding:1rem;
+   text-decoration: none;
+   margin-right: 2rem;
+   margin-left: 2rem;
+   font-size: .9rem;}
+
+.btn4{
+   color: white;
+   background-color: #EE7E17;
+   padding: 1rem;
+   text-decoration: none;
+   margin-right: 2rem;
+   margin-left: 2rem;
+   font-size: .9rem;}
+
+.home-black-part .word-wrapper2{
+   flex-grow: 1;
+   display: flex; 
+   align-items: stretch;
+   align-self: center;
+   margin-top: 5rem;
+   margin-bottom: 2rem;
+   color: white;}
+
+.subtitle3{
+   font-weight: 500;
+   font-size: 0.8em;
+   text-align: center;
+}
+
+.Button-wrapper1{
+   flex-grow: 1;
+   display: flex;
+   align-items: stretch;
+   align-self: center;
+   position: absolute;
+   margin-top: 28rem;
+}
+.Signup{
+   color: white;
+   background-color: rgba(238, 126, 23,.4);
+   height: 2rem;
+   width: 18rem;
+   border: 2rem;
+   border-color: white;
+   border-radius: 0rem;
+   margin-right: 1rem;
+   margin-left: 2rem;
+   font-size: .9rem;
+}
+
+.Login{
+   color: white;
+   background-color: #EE7E17;
+   height: 2rem;
+   width: 18rem;
+   border: 2rem;
+   border-color: white;
+   border-radius: 0rem;
+   margin-right: 1rem;
+   margin-left: 2rem;
+   font-size: .9rem;
+}
