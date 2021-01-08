@@ -30,25 +30,36 @@
          </div>
       </div>
    </section>
+
    <section class="main-section">
-      <div class="main-section-Div">
-         <h2 class="titleMessages">Send message</h2>
-      </div>
-      <div class="main-section-Infomation">
-         <div class="div1">
-            <h3 class="InfoTxt" style="margin-right: 5rem;">Name*</h3>
-         <input class="inputName" type="text" name="txtName" id="inputName">
+      <form action="" id="idForm" onsubmit="return myFunction()" >
+         <div class="main-section-Div">
+            <h2 class="titleMessages">Send message</h2>
          </div>
-         <div class="div2">
-            <h3 class="InfoTxt" style="margin-right: 5rem;">Email*</h3>
-            <input class="inputEmail" type="text" name="txtEmail" id="inputEmail">
+         <div class="main-section-Infomation">
+            <div class="div1">
+               <h3 class="InfoTxt" style="margin-right: 5rem;">Name*</h3>
+            <input class="inputName"  type="text" name="txtName" id="inputName" required>
+            </div>
+            <div class="div2">
+               <h3 class="InfoTxt" style="margin-right: 5rem;">Email*</h3>
+               <input class="inputEmail"  type="email" name="txtEmail" id="inputEmail" required>
+            </div>
+            <div class="div3">
+               <h3 class="InfoTxt" style="margin-right: 3.3rem;">Message*</h3>
+               <input class="inputMessage"  name="txtMessage" type="text" id="inputMessage" required>
+            </div>
+            <input class="btnsub"  type="submit" value="Send mail"></input>
+            <script>
+            function myFunction() {
+              var inpObj = document.getElementById("idForm");
+              if (!inpObj.checkValidity()) {
+               document.getElementById("input").innerHTML = inpObj.validationMessage;
+              }
+            }
+            </script> 
          </div>
-         <div class="div3">
-            <h3 class="InfoTxt" style="margin-right: 3.3rem;">Message*</h3>
-            <input class="inputMessage" name="txtMessage" id="inputMessage">
-         </div>
-         <a class="btnsub" type="button" href="CONTACT.html">Send mail</a>
-      </div>
+      </form>
    </section>
    <Section class="mainInfo">
       <div class="mainInfoDiv1">
