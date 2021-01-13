@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="StyleContact.css">
+   <script defer src="app.js"></script>
    <title>Clone Contact</title>
 </head>
 <body>
@@ -32,35 +33,31 @@
    </section>
 
    <section class="main-section">
-      <form action="" id="idForm" onsubmit="return myFunction()" >
-         <div class="main-section-Div">
-            <h2 class="titleMessages">Send message</h2>
-         </div>
-         <div class="main-section-Infomation">
+      <div class="main-section-Div">
+         <h2 class="titleMessages">Send message</h2>
+      </div>
+      <div class="main-section-Infomation">
+         <form action="#" id="form" onkeydown="myfunction()">
             <div class="div1">
-               <h3 class="InfoTxt" style="margin-right: 5rem;">Name*</h3>
-            <input class="inputName"  type="text" name="txtName" id="inputName" required>
+               <label for="name" class="InfoTxt">Name*</label>
+               <input class="input" type="text" name="name" id="name" autocomplete="false">
             </div>
-            <div class="div2">
-               <h3 class="InfoTxt" style="margin-right: 5rem;">Email*</h3>
-               <input class="inputEmail"  type="email" name="txtEmail" id="inputEmail" required>
+            <p class="errorMessage" id="error"></p>
+            <div class="div1">
+               <label for="email" class="InfoTxt" >Email*</label>
+               <input class="input" type="email" name="email" id="email" autocomplete="false">
             </div>
-            <div class="div3">
-               <h3 class="InfoTxt" style="margin-right: 3.3rem;">Message*</h3>
-               <input class="inputMessage"  name="txtMessage" type="text" id="inputMessage" required>
+            <p class="errorMessage" id="error2"></p>
+            <div class="div1">
+               <label for="name" class="InfoTxt">Message*</label>
+               <input class="inputMessage" type="text" name="message" id="message">
             </div>
-            <input class="btnsub"  type="submit" value="Send mail"></input>
-            <script>
-            function myFunction() {
-              var inpObj = document.getElementById("idForm");
-              if (!inpObj.checkValidity()) {
-               document.getElementById("input").innerHTML = inpObj.validationMessage;
-              }
-            }
-            </script> 
-         </div>
-      </form>
+            <p class="errorMessage" id="error3"></p>
+            <button class="btnsub" type="button" onclick="myfunction()">Send mail</button>
+         </form>
+      </div>
    </section>
+   
    <Section class="mainInfo">
       <div class="mainInfoDiv1">
          <h2 class="mainInfo-heading">You can also call my number  directly</h2>
