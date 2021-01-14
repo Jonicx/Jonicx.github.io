@@ -6,7 +6,7 @@ function myfunction(){
    var name = document.getElementById("name").value;
    var errortextname = document.getElementById("error");
    var messsage = document.getElementById("message").value;
-   var errortextmessage = document.getElementById("error3")
+   var errortextmessage = document.getElementById("error3");
 
    if(email.match(pattner)){
       form.classList.add("valid");
@@ -39,11 +39,15 @@ function myfunction(){
       errortextname.style.color = "#00ff00";
    }
 
-
-   if(messsage >= 150){
+   if(messsage == '' || message == null){
       form.classList.remove("valid");
       form.classList.add("invalid");
-      errortextmessage.innerHTML = "Please a message must be less than 150 letter.";
+      errortextmessage.innerHTML = "Please dear user message is required!";
       errortextmessage.style.color = "#ff0000";
+   }else{
+      form.classList.add("valid");
+      form.classList.remove("invalid");
+      errortextmessage.innerHTML = "Thank you, your message is very important to us!";
+      errortextmessage.style.color = "#00ff00";
    }
 }
